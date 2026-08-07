@@ -4,6 +4,13 @@
 
 公众号「硅基饲料」主理人 · AI 热点科普作者 · 终身学习者
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=panda-chef.panda-chef)
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=panda-chef&show_icons=true&title_color=DE2910&icon_color=DE2910&text_color=475569&bg_color=FDF6E3&hide_border=true" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=panda-chef&layout=compact&title_color=DE2910&text_color=475569&bg_color=FDF6E3&hide_border=true" width="49%" />
+</p>
+
 ---
 
 ## 📚 内容厨房（Content Kitchen）
