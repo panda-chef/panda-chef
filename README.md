@@ -14,7 +14,12 @@
 
 ## 🔥 招牌菜（Featured Projects）
 
-> 🌟 _代表作即将出炉…_
+### [🍲 熊猫厨子的 AI 火锅店](https://github.com/panda-chef/panda-hotpot)
+
+每道菜 = 一个 AI 热点：科普文章 + 可运行代码 + 资料清单，与公众号「硅基饲料」同步上架。
+
+- 🥇 Qwen3.8 Max 登顶 Agentic Index（已发布）
+- 🔌 AI Agent 统一标准：MCP 是什么？（制作中）
 
 ## 🧰 厨房工具（Tech Stack）
 
