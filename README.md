@@ -6,10 +6,6 @@
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=panda-chef.panda-chef)
 
-<p align="center">
-  <img src="https://stats.justsong.cn/api/github?username=panda-chef" />
-</p>
-
 ---
 
 ## 📚 内容厨房（Content Kitchen）
