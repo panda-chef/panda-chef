@@ -8,20 +8,30 @@
 
 ---
 
-## 📚 内容厨房（Content Kitchen）
+## 🍲 招牌菜：熊猫厨子的 AI 火锅店
 
-这里存放我的"菜谱"——每篇科普背后配套的代码、资料与实验：
+> **每道菜 = 一个 AI 热点**：科普文章 + 可运行代码 + 资料清单
 
-> 🍳 _菜谱陆续上架中，敬请期待…_
+[**🐼 进店看菜单 →**](https://github.com/panda-chef/panda-hotpot) ｜ [🌐 在线浏览](https://panda-chef.github.io/panda-hotpot/)
 
-## 🔥 招牌菜（Featured Projects）
+已上架 **41 道菜**（2026-08 起持续更新），与公众号「硅基饲料」同步上架。
 
-### [🍲 熊猫厨子的 AI 火锅店](https://github.com/panda-chef/panda-hotpot)
+### 🔥 最近上架
 
-每道菜 = 一个 AI 热点：科普文章 + 可运行代码 + 资料清单，与公众号「硅基饲料」同步上架。
+| 上架时间 | 菜品 |
+|---------|------|
+| 2026-10-09 | [🍲 Docker 官方开源了一个 Agent，我把它 push 进了镜像仓库](https://github.com/panda-chef/panda-hotpot/blob/main/dishes/2026-10-09-Docker-%E5%AE%98%E6%96%B9%E5%BC%80%E6%BA%90%E4%BA%86%E4%B8%80%E4%B8%AA-Agent%EF%BC%8C%E6%88%91%E6%8A%8A%E5%AE%83/README.md) |
+| 2026-10-08 | [🍲 GPT-6 免费、Claude 直降 90%，可两份报告里都写着一句心虚的话](https://github.com/panda-chef/panda-hotpot/blob/main/dishes/2026-10-08-GPT-6-%E5%85%8D%E8%B4%B9%E3%80%81Claude-%E7%9B%B4%E9%99%8D-90%25%EF%BC%8C%E5%8F%AF/README.md) |
+| 2026-09-28 | [🍲 几百个 Agent 逃出沙箱，但失控的不是它们](https://github.com/panda-chef/panda-hotpot/blob/main/dishes/2026-09-28-%E5%87%A0%E7%99%BE%E4%B8%AA-Agent-%E9%80%83%E5%87%BA%E6%B2%99%E7%AE%B1%EF%BC%8C%E4%BD%86%E5%A4%B1%E6%8E%A7%E7%9A%84%E4%B8%8D%E6%98%AF%E5%AE%83%E4%BB%AC/README.md) |
+| 2026-09-24 | [🍲 我读不懂 AI 写的东西，造 Claude 的工程师说这不怪我](https://github.com/panda-chef/panda-hotpot/blob/main/dishes/2026-09-24-%E6%88%91%E8%AF%BB%E4%B8%8D%E6%87%82-AI-%E5%86%99%E7%9A%84%E4%B8%9C%E8%A5%BF%EF%BC%8C%E9%80%A0-Claude-%E7%9A%84%E5%B7%A5/README.md) |
+| 2026-09-23 | [🍲 OpenAI 和 Anthropic 同一天降价，我拿计算器重算了这周的活](https://github.com/panda-chef/panda-hotpot/blob/main/dishes/2026-09-23-OpenAI-%E5%92%8C-Anthropic-%E5%90%8C%E4%B8%80%E5%A4%A9%E9%99%8D%E4%BB%B7/README.md) |
 
-- 🥇 Qwen3.8 Max 登顶 Agentic Index（已发布）
-- 🔌 AI Agent 统一标准：MCP 是什么？（制作中）
+[→ 查看全部 41 道菜](https://github.com/panda-chef/panda-hotpot)
+
+### 📌 常驻招牌
+
+- [🥇 Qwen3.8 Max 登顶 Agentic Index：AI 排行榜到底在排什么？](https://github.com/panda-chef/panda-hotpot/blob/main/dishes/2026-08-qwen38-agentic-index/README.md)
+- [🔌 AI Agent 统一标准：MCP 到底是什么？](https://github.com/panda-chef/panda-hotpot/blob/main/dishes/2026-08-mcp-agent-standard/README.md)
 
 ## 🧰 厨房工具（Tech Stack）
 
@@ -30,6 +40,7 @@ Java · Spring Boot · MySQL · Redis · RabbitMQ · Python · AI Tools
 ## 📮 找我聊聊
 
 - 📢 公众号：**硅基饲料**（ID: `AI_Feed`）—— AI 热点与科普
+- 🍲 内容仓库：[panda-hotpot](https://github.com/panda-chef/panda-hotpot) · [在线菜单](https://panda-chef.github.io/panda-hotpot/)
 - 💬 欢迎交流 AI、编程与一切有趣的技术
 
 ---
