@@ -3,9 +3,9 @@
 **AI 研发提效工程师** —— 企业级 Java 微服务 × 多 Agent 编排 × 规范输出
 
 写企业级 Java 微服务，也把多个 AI Agent 编排成可复现的研发流水线，再把做法写成团队能照着执行的规范文档。
-公众号「硅基饲料」主理人，持续日更 45+ 篇 AI 深度科普。
+用 AI 从 0 到 1 做过桌面应用，也在持续运营一个有真实用户的 AI 科普公众号。
 
-`Java` `Spring Cloud` `Python` `AI Agents` `MCP` `Docker`
+`Java` `Spring Cloud` `TypeScript` `Electron` `Python` `AI Agents` `MCP` `Docker`
 
 📮 **scootwang@163.com**
 
@@ -15,7 +15,28 @@
 
 > Vibe coding = 用自然语言驱动 AI 写代码。下面这些不是教程里的 demo，是我每天在跑、还在持续维护的工程。
 
-### 1️⃣ agent-loop —— 把「会用 AI」变成「编排 AI」 ⭐
+### 1️⃣ IDEA-Air —— 从 0 到 1 的 AI 原生 IDE ⭐
+
+**[github.com/panda-chef/IDEA-Air](https://github.com/panda-chef/IDEA-Air)** ｜ Electron · React 19 · TypeScript · 8500 行 · MIT
+
+**问题**：AI 写代码已经便宜到几乎不算成本，瓶颈转移到了它改完之后——看懂改了什么、把项目跑起来、确认没问题再提交。为了这几个动作去开一套 IntelliJ IDEA（空闲常驻 600MB–1.5GB、启动 10–20 秒、索引一跑 CPU 就喘）不划算。
+
+**做法**：把整条链路收进一个窗口 —— 打开项目 → 让 agent 改 → 看双栏 diff → 底部终端跑起来 → 提交。
+
+**已经跑通并验证的部分**：
+
+- Monaco 编辑器、多标签、脏标记、快捷键保存
+- **非 UTF-8（如 GBK）文件自动识别并标记只读** —— 宁可只读，也不损坏原文件
+- 底部控制台：Agent 会话 / Git 操作 / 文件变更 三类日志，外加各进程内存、CPU、会话数
+- **安全边界**：渲染进程 `sandbox: true` + `contextIsolation: true`，所有文件访问经 preload 暴露的 API 走主进程，路径在主进程做工作区白名单校验
+
+**技术栈**：Electron · React 19 · TypeScript · Monaco · xterm.js + node-pty（ConPTY）· electron-vite
+
+**踩过的坑**：`ELECTRON_RUN_AS_NODE` 环境变量会让 Electron 以 Node 模式启动，窗口根本不创建——排查了半天才发现不是代码问题。现在主进程 spawn 子进程时会主动剔除这个变量，避免传染给 agent CLI。
+
+---
+
+### 2️⃣ agent-loop —— 把「会用 AI」变成「编排 AI」 ⭐
 
 **[github.com/panda-chef/agent-loop](https://github.com/panda-chef/agent-loop)** ｜ Python · 600 行 · MIT
 
@@ -43,7 +64,7 @@ develop ──→ verify ──pass──→ push ──→ review ──approve
 
 ---
 
-### 2️⃣ 内容生产管线 —— 45+ 篇日更背后的工程
+### 3️⃣ 内容生产管线 —— 48 篇日更背后的工程
 
 公众号「硅基饲料」持续日更，背后的流水线是自建的：**cron 定时触发 → 抓当日热点 → AI 写稿 → 合规自查 → 生成封面 → 调用微信草稿 API → 同步 GitHub 内容库 → 静态站点自动部署**。
 
@@ -56,9 +77,9 @@ develop ──→ verify ──pass──→ push ──→ review ──approve
 
 ---
 
-### 3️⃣ panda-hotpot —— 内容库的基建
+### 4️⃣ panda-hotpot —— 内容库的基建
 
-**[github.com/panda-chef/panda-hotpot](https://github.com/panda-chef/panda-hotpot)** ｜ 46 道菜 · 1370 行工具链 · 48 个单测
+**[github.com/panda-chef/panda-hotpot](https://github.com/panda-chef/panda-hotpot)** ｜ 48 道菜 · 1370 行工具链 · 48 个单测
 
 每篇文章落成一个「菜品」目录：完整导语 + 参考资料 + 元信息。围绕它做了一套工具链：
 
