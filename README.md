@@ -29,6 +29,7 @@
 - **非 UTF-8（如 GBK）文件自动识别并标记只读** —— 宁可只读，也不损坏原文件
 - 底部控制台：Agent 会话 / Git 操作 / 文件变更 三类日志，外加各进程内存、CPU、会话数
 - **安全边界**：渲染进程 `sandbox: true` + `contextIsolation: true`，所有文件访问经 preload 暴露的 API 走主进程，路径在主进程做工作区白名单校验
+- **Agent 会话层**：Claude Code（官方 Agent SDK）+ Codex（`app-server`）双后端；工具调用需要用户拍板时把请求抛到界面，而不是替用户决定；会话支持从历史复活
 
 **技术栈**：Electron · React 19 · TypeScript · Monaco · xterm.js + node-pty（ConPTY）· electron-vite
 
