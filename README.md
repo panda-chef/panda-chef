@@ -65,7 +65,7 @@ develop ──→ verify ──pass──→ push ──→ review ──approve
 
 ---
 
-### 3️⃣ 内容生产管线 —— 50 篇日更背后的工程
+### 3️⃣ 内容生产管线 —— 51 篇日更背后的工程
 
 公众号「硅基饲料」持续日更，背后的流水线是自建的：**cron 定时触发 → 抓当日热点 → AI 写稿 → 合规自查 → 生成封面 → 调用微信草稿 API → 同步 GitHub 内容库 → 静态站点自动部署**。
 
@@ -80,7 +80,7 @@ develop ──→ verify ──pass──→ push ──→ review ──approve
 
 ### 4️⃣ panda-hotpot —— 内容库的基建
 
-**[github.com/panda-chef/panda-hotpot](https://github.com/panda-chef/panda-hotpot)** ｜ 50 道菜 · 1370 行工具链 · 48 个单测
+**[github.com/panda-chef/panda-hotpot](https://github.com/panda-chef/panda-hotpot)** ｜ 51 道菜 · 1370 行工具链 · 48 个单测
 
 每篇文章落成一个「菜品」目录：完整导语 + 参考资料 + 元信息。围绕它做了一套工具链：
 
