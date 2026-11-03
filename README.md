@@ -17,7 +17,9 @@
 
 ### 1️⃣ IDEA-Air —— 从 0 到 1 的 AI 原生 IDE ⭐
 
-**[github.com/panda-chef/IDEA-Air](https://github.com/panda-chef/IDEA-Air)** ｜ Electron · React 19 · TypeScript · 8500 行 · MIT
+**私有仓库**（可当面演示 / 按需开通访问）｜ Electron · React 19 · TypeScript · 8500 行 · MIT
+
+> 这个项目含本人在真实工程环境里的使用痕迹，不适合公开托管。完整代码、设计文档和现场演示可在面试时过一遍。
 
 **问题**：AI 写代码已经便宜到几乎不算成本，瓶颈转移到了它改完之后——看懂改了什么、把项目跑起来、确认没问题再提交。为了这几个动作去开一套 IntelliJ IDEA（空闲常驻 600MB–1.5GB、启动 10–20 秒、索引一跑 CPU 就喘）不划算。
 
