@@ -65,13 +65,14 @@ develop ──→ verify ──pass──→ push ──→ review ──approve
 
 ---
 
-### 3️⃣ 内容生产管线 —— 51 篇日更背后的工程
+### 3️⃣ 内容生产管线 —— 65 篇日更背后的工程
 
 公众号「硅基饲料」持续日更，背后的流水线是自建的：**cron 定时触发 → 抓当日热点 → AI 写稿 → 合规自查 → 生成封面 → 调用微信草稿 API → 同步 GitHub 内容库 → 静态站点自动部署**。
 
 工程上值得说的几处：
 
-- **1165 行 Python、零第三方依赖**对接微信公众号 API：access_token 生命周期管理、图片素材 multipart 上传、草稿 CRUD、已发布内容读取
+- **1900+ 行 Python 工具链（19 个脚本）**对接微信公众号 API：access_token 生命周期管理、图片素材 multipart 上传（封面走 `add_material`，正文走 `media/uploadimg`）、草稿 CRUD、已发布内容读取；除可选的 Pillow 外零第三方依赖
+- **排版链路自己做**：Markdown 管道表格解析成带内联样式的 `<table>`（微信会剥掉外部 CSS），正文配图走 HTML 渲染 + 无头浏览器 2x 截图 + 自动裁白边，再上传成微信图床 URL
 - **自建合规检查器**：分类敏感词 + 白名单，写稿后强制自查，不通过不放行到发布环节
 - **封面生成降级链**：PIL 可用时渲染完整版，不可用时回退纯 Python PNG 写入，保证流程不中断
 - **踩过的坑**：微信 API 的 IP 白名单会随网络出口变化静默失效（真实出口 IP 只藏在错误码 40164 的报文里）；草稿正文里的 `<a>` 标签会被全部剥离，唯一可点的外链只有「阅读原文」字段
@@ -80,7 +81,7 @@ develop ──→ verify ──pass──→ push ──→ review ──approve
 
 ### 4️⃣ panda-hotpot —— 内容库的基建
 
-**[github.com/panda-chef/panda-hotpot](https://github.com/panda-chef/panda-hotpot)** ｜ 51 道菜 · 1370 行工具链 · 48 个单测
+**[github.com/panda-chef/panda-hotpot](https://github.com/panda-chef/panda-hotpot)** ｜ 65 道菜 · 1370 行工具链 · 48 个单测
 
 每篇文章落成一个「菜品」目录：完整导语 + 参考资料 + 元信息。围绕它做了一套工具链：
 
